@@ -21,3 +21,6 @@ echo "מבצע בנייה לאפליקציה..."
 npm run build
 
 echo "הפעולה הסתיימה בהצלחה!"
+echo "מעלה את קבצי ה-build ל-GCS..."
+gsutil cp -r build/* gs://hadasmargolin
+
